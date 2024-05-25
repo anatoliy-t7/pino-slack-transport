@@ -1,0 +1,40 @@
+{
+	"name": "@anatoliy/pino-slack-transport",
+	"version": "0.1.2",
+	"description": "pino-slack-webhook is a Pino v7+ compatible transport to forward log events to Slack from a dedicated worker",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rimraf dist && tsc",
+		"dev": "npm run build && tsc --watch",
+		"lint": "eslint \"{src,test}/**/*.ts\" --fix",
+		"test": "jest",
+		"release": "npm publish --access public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anatoliy-t7/pino-slack-transport.git"
+	},
+	"keywords": [
+		"pino",
+		"logging",
+		"transport",
+		"slack",
+		"webhook"
+	],
+	"author": "YoungKi Lyu",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/anatoliy-t7/pino-slack-transport/issues"
+	},
+	"homepage": "https://github.com/anatoliy-t7/pino-slack-transport#readme",
+	"dependencies": {
+		"pino-abstract-transport": "^1.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"pino": "^9.1.0",
+		"ts-node": "^10.9.2",
+		"typescript": "~5.4.5"
+	}
+}
